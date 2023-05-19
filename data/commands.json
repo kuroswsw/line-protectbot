@@ -1,0 +1,242 @@
+{
+	"[bot]":{
+		"test":{
+			"access":["all user"],
+			"function":["botの動作確認"]
+		},
+		"speed":{
+			"access":["dev","invitee"],
+			"function":["botの速度測定"]
+		},
+		"ver":{
+			"access":["all user"],
+			"function":["botのバージョン確認"]
+		},
+		"noop":{
+			"access":["dev"],
+			"function":["全てのアカウントでnoop"]
+		},
+		"joinlen":{
+			"access":["dev"],
+			"function":["botが参加中のグループ数確認"]
+		}
+	},
+	"[info]":{
+		"help":{
+			"access":["dev","invitee","local"],
+			"function":["help表示"]
+		},
+		"shelp":{
+			"access":["dev","invitee","local"],
+			"function":["簡単なhelp表示"]
+		},
+		"dhelp":{
+			"access":["dev","invitee","local"],
+			"function":["詳しいhelp表示"]
+		},
+		"hsearch:[text]":{
+			"access":["dev","invitee","local"],
+			"function":["helpを検索"]
+		},
+		"keylist":{
+			"access":["all user"],
+			"function":["key一覧と説明を表示"]
+		},
+		"checkrate [@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーの内部レートを確認"]
+		},
+		"checkrate":{
+			"access":["dev"],
+			"function":["連絡先で内部レートを確認"]
+		}
+	},
+	"[user]":{
+		"mid":{
+			"access":["all user"],
+			"function":["自分のmidを表示"]
+		},
+		"mid [@]":{
+			"access":["all user"],
+			"function":["メンションしたユーザーのmidを表示"]
+		},
+		"ucheck":{
+			"access":["all user"],
+			"function":["自分の権限、ホワリス、ブラリスを確認"]
+		},
+		"acheck":{
+			"access":["all user"],
+			"function":["所持している権限を確認"]
+		},
+		"prefix:[n]":{
+			"access":["all user"],
+			"function":["接頭辞を[n]に変更"]
+		},
+		"checkprefix":{
+			"access":["all user"],
+			"function":["自分の接頭辞を確認"]
+		}
+	},
+	"[group]":{
+		"set:on:[key]":{
+			"access":["dev","invitee","local"],
+			"function":["[key]の設定を有効"],
+			"example":"set:on:key1 key2 key3"
+		},
+		"set:off:[key]":{
+			"access":["dev","invitee","local"],
+			"function":["[key]の設定を無効"],
+			"example":"set:of:key1 key2 key3"
+		},
+		"add:lwhite [@]":{
+			"access":["dev","invitee","local"],
+			"function":["メンションしたユーザーをホワリス(local)に追加"]
+		},
+		"del:lwhite [@]":{
+			"access":["dev","invitee","local"],
+			"function":["メンションしたユーザーをホワリス(local)から削除"]
+		},
+		"add:lblack":{
+			"access":["dev","invitee","local"],
+			"function":["連絡先でユーザーをブラリス(local)に追加"]
+		},
+		"del:lblack":{
+			"access":["dev","invitee","local"],
+			"function":["連絡先でユーザーをブラリス(local)から削除"]
+		},
+		"add:lblack [@]":{
+			"access":["dev","invitee","local"],
+			"function":["メンションしたユーザーをブラリス(local)に追加"]
+		},
+		"del:lblack [@]":{
+			"access":["dev","invitee","local"],
+			"function":["メンションしたユーザーをブラリス(local)から削除"]
+		},
+		"del:autoblack":{
+			"access":["dev","invitee","local"],
+			"function":["連絡先でユーザーをブラリス(autoblack)から削除"]
+		},
+		"fin":{
+			"access":["all user"],
+			"function":["連絡先での操作を終了"]
+		},
+		"add:local [@]":{
+			"access":["dev","invitee"],
+			"function":["メンションしたユーザーに権限(local)を付与"]
+		},
+		"del:local [@]":{
+			"access":["dev","invitee"],
+			"function":["メンションしたユーザーの権限(local)を削除"]
+		},
+		"joinms:[text]":{
+			"access":["dev","invitee","local"],
+			"function":["参加メッセージを[text]に設定","[text]に@kurosawaを入れるとメンション"],
+			"example":"joinms:@kurosawa hello"
+		},
+		"scheck":{
+			"access":["dev","invitee","local"],
+			"function":["グループの設定を確認"]
+		},
+		"lcheck":{
+			"access":["dev","invitee","local"],
+			"function":["グループの権限を確認"]
+		},
+		"join":{
+			"access":["dev","invitee","local"],
+			"function":["足りないbotを参加"]
+		},
+		"un:[num]":{
+			"access":["dev","invitee","local"],
+			"function":["[num]の回数送信取り消し"]
+		},
+		"invitee [@]":{
+			"access":["dev","invitee"],
+			"function":["メンションしたユーザーに招待者権限を移行"]
+		},
+		"leave":{
+			"access":["dev","invitee"],
+			"function":["botをグループから退会"]
+		},
+		"mc":{
+			"access":["all user"],
+			"function":["メンションされた場所を確認"]
+		},
+		"gid":{
+			"access":["all user"],
+			"function":["グループのgidを表示"]
+		},
+		"mk @":{
+			"access":["dev"],
+			"function":["メンションしたユーザーをキック"]
+		}
+	},
+	"[list]":{
+		"add:black [@]":{
+			"access":["all user"],
+			"function":["メンションしたユーザーをブラリスに追加"]
+		},
+		"del:black [@]":{
+			"access":["all user"],
+			"function":["メンションしたユーザーをブラリスから削除"]
+		},
+		"add:black":{
+			"access":["all user"],
+			"function":["連絡先でユーザーをブラリスに追加"]
+		},
+		"del:black":{
+			"access":["all user"],
+			"function":["連絡先でユーザーをブラリスから削除"]
+		},
+		"add:user [@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーに権限を付与"]
+		},
+		"del:user [@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーの権限を削除"]
+		},
+		"botadd [@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーをbotlistに追加"]
+		},
+		"add:dev [@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーに開発者権限を付与"]
+		},
+		"del:dev [@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーの開発者権限を削除"]
+		}
+	},
+	"[others]":{
+		"comp_data":{
+			"access":["dev"],
+			"function":["足りないデータを補完"]
+		},
+		"getop:[num]":{
+			"access":["dev"],
+			"function":["[num]のopを表示"]
+		},
+		"data_view":{
+			"access":["dev"],
+			"function":["データを表示"]
+		},
+		"sendop:on":{
+			"access":["dev"],
+			"function":["op送信を有効"]
+		},
+		"sendop:off":{
+			"access":["dev"],
+			"function":["op送信を無効"]
+		},
+		"exec:[cmd]":{
+			"access":["dev"],
+			"function":["[cmd]を実行"]
+		},
+		"rate:[num]:[c_type]:[r_type]:[@]":{
+			"access":["dev"],
+			"function":["メンションしたユーザーの内部レートを変更"]
+		}
+	}
+}
+
